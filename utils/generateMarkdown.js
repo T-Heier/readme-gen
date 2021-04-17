@@ -21,7 +21,43 @@ function generateMarkdown(data) {
   return `# ${data.projectName}
 
   ## Table of contents
-  
+
+  - [Repo description](${data.description})
+  - [License](${data.license})
+  - [Install](${data.installDep})
+  - [Testing](${data.tests})
+  - [User Contribution](${data.userContrib})
+  - [User Information](${data.userInfo})
+  - [Contact Information](${data.email})
+
+  ## Description
+
+  ${data.description}
+
+  ## License
+
+  ${data.license}
+
+  ## Installation
+
+  ${data.installDep}
+
+  ## Testing
+
+  ${data.tests}
+
+  ## User Contribution
+
+  ${data.userContrib}
+
+  ## User Information
+
+  ${data.userInfo}
+
+  ## Contact me!
+
+  - ${data.user}
+  - ${data.email}
 
 `;
 }
