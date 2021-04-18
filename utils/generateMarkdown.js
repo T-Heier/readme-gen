@@ -20,41 +20,41 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.projectName}
 
-  ## Table of contents
+  # Table of contents
 
-  - [Repo description](${data.description})
-  - [License](${data.license})
-  - [Install](${data.installDep})
-  - [Testing](${data.tests})
-  - [User Contribution](${data.userContrib})
-  - [User Information](${data.userInfo})
-  - [Contact Information](${data.email})
+  - [Repo description](#description)
+  - [License](#license)
+  - [Install](#installation)
+  - [Testing](#testing)
+  - [User Contribution](#User-Contribution)
+  - [User Information](#user-Information)
+  - [Contact Information](#contact-me)
 
-  ## Description
+  # Description
 
   ${data.description}
 
-  ## License
+  # License
 
   ${data.license}
 
-  ## Installation
+  # Installation
 
   ${data.installDep}
 
-  ## Testing
+  # Testing
 
   ${data.tests}
 
-  ## User Contribution
+  # User Contribution
 
   ${data.userContrib}
 
-  ## User Information
+  # User Information
 
   ${data.userInfo}
 
-  ## Contact me!
+  # Contact me!
 
   - ${data.user}
   - ${data.email}
