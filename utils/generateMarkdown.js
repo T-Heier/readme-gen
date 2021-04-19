@@ -21,7 +21,6 @@ function renderLicenseLink(license) {
     link = "https://choosealicense.com/licenses/bsd-3-clause/"
   } else link = "";
 
-  console.log(link)
   return link;
 }
 
