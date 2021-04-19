@@ -64,8 +64,8 @@ function init() {
 
     .then((data) => {
         const fileName = `${data.projectName}.md`
-        generateMarkdown(data)
-        const dataLicense = data.license
+        const license = data.license
+        generateMarkdown(data, license)
         
 
         fs.writeFile(fileName, (generateMarkdown(data)), (err) => {
